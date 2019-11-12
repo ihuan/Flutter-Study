@@ -14,15 +14,8 @@ class HomePage extends StatelessWidget {
       appBar: new AppBar(
         title: Text('Home'),
       ),
-      body: Image.network(
-        bannerImg,
-        height: 200.0,
-      ),
-      // body: Image.asset(
-      //   'lib/images/icon_demo.jpg',
-      //   height: 100,
-      //   width: 100,
-      // ),
+      // 方法二
+      body: Card(),
       backgroundColor: Colors.white,
     );
   }
