@@ -1,46 +1,27 @@
 import 'package:flutter/material.dart';
 
 void main() => runApp(MaterialApp(
-      home: new HomePage2(),
+      home: new HomePage(),
     ));
 
 class HomePage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: new AppBar(
-        title: Text('Home'),
-      ),
-      body: ListView(
-        children: List.generate(10, (index) {
-          return Card(child: Container(
-            height: 100,
-            color: Colors.greenAccent,
-            child: Text('$index'),
-          ),);
-        }),
-      ),
-      backgroundColor: Colors.white,
-    );
-  }
-}
+  final String bannerImg =
+      'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1573548186542&di=8ec4a6fc49d1a266845a18ffe9431830&imgtype=0&src=http%3A%2F%2Fdingyue.nosdn.127.net%2FetqmQabSGrqHXhTvzaS91gV006NWCPDnEgLHRoAVony8E1543979039684.png';
 
-class HomePage2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: new AppBar(
         title: Text('Home'),
       ),
-      body: ListView.builder(
-        itemCount: 18,
-        itemBuilder: (context, idx) {
-          return Card(child: Container(
-            height: 100,
-            color: Colors.purpleAccent,
-            child: Text('$idx'),
-          ),);
-        },
+      // body: Image.network(
+      //   bannerImg,
+      //   height: 200.0,
+      // ),
+      body: Image.asset(
+        'lib/images/icon_demo.jpg',
+        height: 100,
+        width: 100,
       ),
       backgroundColor: Colors.white,
     );
