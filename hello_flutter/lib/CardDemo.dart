@@ -6,7 +6,8 @@ void main() => runApp(MaterialApp(
     ));
 
 /*
-container 类
+Card 类
+如果要调节Card的长宽，可以用 Container 或者  SizedBox
 1. decoration: 要确保外面的color=nil
 2. constraints: 如果没有指定长宽，它的大小会跟随child的大小适配，如果没有child，则根据parent适配
 
