@@ -22,6 +22,7 @@ class HomePageState extends State<HomePage> {
   }
 
   preparedData() {
+    // todo:待完成
     http.get(host).then((response) {
       setState(() {
         dataArry = jsonDecode(response.body);
